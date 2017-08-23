@@ -29,14 +29,17 @@ public class Reloj
         {
             minutos++;
         }
-        else if(horas<24)
-            {
+        else
+        {
             minutos=0;
-            horas++;
+            if(horas<23)
+            {
+                horas++;
             }
             else
             {
                 horas=0;
             }
+        }
     }
 }
